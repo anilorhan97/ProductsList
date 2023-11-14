@@ -1,0 +1,23 @@
+<div class="nav">
+    <div class="left-icons">
+        <div id="main">
+            <button class="openbtn" (click)="openSide()">☰</button>
+        </div>
+    </div>
+</div>
+<mat-drawer-container>
+    <mat-drawer [(opened)]="opened" mode="push">
+        <mat-list>
+            <mat-list-item routerLink="products-list" routerLinkActive="active">
+                <a><mat-icon class="me-2">reorder</mat-icon>Ürünler</a>
+            </mat-list-item>
+
+            <mat-list-item routerLink="" class="logout bottom-items" (click)="logOut()">
+                <a><mat-icon>exit_to_app</mat-icon>Çıkış Yap</a>
+            </mat-list-item>
+        </mat-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

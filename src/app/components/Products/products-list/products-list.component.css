@@ -1,0 +1,76 @@
+.mat-column-id {
+    flex: 0 0 3% !important;
+    width: 3% !important;
+}
+.mat-column-brand {
+    flex: 0 0 6% !important;
+    width: 6% !important;
+}
+.mat-column-title {
+    flex: 0 0 6% !important;
+    width: 6% !important;
+}
+.mat-column-category {
+    flex: 0 0 6% !important;
+    width: 6% !important;
+}
+.mat-column-discountPercentage {
+    flex: 0 0 6% !important;
+    width: 6% !important;
+}
+.mat-column-price {
+    flex: 0 0 6% !important;
+    width: 6% !important;
+}
+.mat-column-rating {
+    flex: 0 0 6% !important;
+    width: 6% !important;
+}
+.mat-column-stock {
+    flex: 0 0 6% !important;
+    width: 6% !important;
+}
+.mat-column-thumbnail {
+    flex: 0 0 10% !important;
+    width: 10% !important;
+}
+.mat-column-description {
+    flex: 0 0 30% !important;
+    width: 30% !important;
+}
+.mat-column-images {
+    flex: 0 0 10% !important;
+    width: 10% !important;
+}
+.mat-column-edit {
+    flex: 0 0 5% !important;
+    width: 5% !important;
+}
+
+.images{
+    height: 50px;
+    width: 70px;
+    transition: all ease 1s;
+}
+
+.images:hover{
+    transform: scale(1.5);
+}
+
+tr:hover{
+    background-color: rgb(62, 65, 218);
+    color: white;
+}
+
+td{
+    height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    th, td {
+        overflow: hidden;
+        width:auto;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
